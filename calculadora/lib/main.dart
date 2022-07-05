@@ -99,7 +99,7 @@ class _CalcState extends State<Calc> {
           if (!_mostrador.contains(".") && !_memory.contains(".")) {
             setState(() {
               _mostrador =
-                  (int.parse(_memory) + int.parse(_mostrador)).toString();
+                  (int.parse(_memory) - int.parse(_mostrador)).toString();
               _memory = "";
               _auxiliar = "null";
             });
@@ -133,7 +133,7 @@ class _CalcState extends State<Calc> {
           if (!_mostrador.contains(".") && !_memory.contains(".")) {
             setState(() {
               _mostrador =
-                  (int.parse(_memory) * int.parse(_mostrador)).toString();
+                  (int.parse(_memory) / int.parse(_mostrador)).toString();
               _memory = "";
               _auxiliar = "null";
             });
