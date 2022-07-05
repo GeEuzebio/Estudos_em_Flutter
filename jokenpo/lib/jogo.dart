@@ -10,6 +10,7 @@ class Jogo extends StatefulWidget {
 }
 
 class _JogoState extends State<Jogo> {
+  // ignore: prefer_const_constructors
   var _imagemInicial = AssetImage("images/vazio.png");
   var _resultado = "Escolha uma opção abaixo:";
 
@@ -21,16 +22,19 @@ class _JogoState extends State<Jogo> {
     switch (escolhaApp) {
       case "pedra":
         setState(() {
+          // ignore: prefer_const_constructors
           _imagemInicial = AssetImage("images/pedra.png");
         });
         break;
       case "papel":
         setState(() {
+          // ignore: prefer_const_constructors
           _imagemInicial = AssetImage("images/papel.png");
         });
         break;
       case "tesoura":
         setState(() {
+          // ignore: prefer_const_constructors
           _imagemInicial = AssetImage("images/tesoura.png");
         });
         break;
@@ -72,11 +76,15 @@ class _JogoState extends State<Jogo> {
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 10, 0, 20),
+            // ignore: unnecessary_this
             child: Image(image: this._imagemInicial),
           ),
           Padding(
+            // ignore: prefer_const_constructors
             padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+            // ignore: unnecessary_this
             child: Text(this._resultado,
+                // ignore: prefer_const_constructors
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           ),
           Row(
