@@ -70,6 +70,8 @@ flutter:
     - images/toad_story.png
     - images/bowser_story.png
     - images/post_1.png
+    - images/post_2.png
+    - images/post_3.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

@@ -191,69 +191,225 @@ class _InstagramState extends State<Instagram> {
               scrollDirection: Axis.horizontal,
             ),
           ),
-          Padding(
-              padding: EdgeInsets.all(10),
+          Container(
+              height: 480,
               child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
-                reverse: true,
                 child: Column(
                   children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            Container(
-                                width: 30,
-                                height: 30,
-                                child: Image.asset('images/mario_story.png')),
-                            Text('Mario')
-                          ],
-                        ),
-                        Container(
-                          width: double.infinity,
-                          child: Image.asset('images/post_1.png'),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            Row(
-                              children: <Widget>[
-                                Padding(
-                                  padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
-                                  child: Icon(Icons.favorite_border_outlined),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
-                                  child: Icon(Icons.mode_comment_outlined),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
-                                  child: Icon(Icons.near_me_outlined),
-                                )
-                              ],
-                            ),
-                            Icon(Icons.turned_in_not)
-                          ],
-                        ),
-                        Row(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(0, 5, 10, 0),
-                              child: Text(
-                                'Mario',
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Column(
+                        children: <Widget>[
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Container(
+                                      width: 30,
+                                      height: 30,
+                                      child: Image.asset(
+                                          'images/mario_story.png')),
+                                  Text('Mario')
+                                ],
                               ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(top: 5),
-                              child: Text('It\'s me, Mario!'),
-                            )
-                          ],
-                        )
-                      ],
+                              Container(
+                                width: double.infinity,
+                                child: Image.asset('images/post_1.png'),
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Row(
+                                    children: <Widget>[
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child: Icon(
+                                            Icons.favorite_border_outlined),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child:
+                                            Icon(Icons.mode_comment_outlined),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child: Icon(Icons.near_me_outlined),
+                                      )
+                                    ],
+                                  ),
+                                  Icon(Icons.turned_in_not)
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                    child: Text(
+                                      'Mario',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(top: 10),
+                                    child: Text('It\'s me, Mario!'),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Column(
+                        children: <Widget>[
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Container(
+                                      width: 30,
+                                      height: 30,
+                                      child: Image.asset(
+                                          'images/luigi_story.png')),
+                                  Text('Luigi')
+                                ],
+                              ),
+                              Container(
+                                width: double.infinity,
+                                child: Image.asset('images/post_2.png'),
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Row(
+                                    children: <Widget>[
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child: Icon(
+                                            Icons.favorite_border_outlined),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child:
+                                            Icon(Icons.mode_comment_outlined),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child: Icon(Icons.near_me_outlined),
+                                      )
+                                    ],
+                                  ),
+                                  Icon(Icons.turned_in_not)
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                    child: Text(
+                                      'Luigi',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(top: 10),
+                                    child: Text('Super Mario Brothers!'),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Column(
+                        children: <Widget>[
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Container(
+                                      width: 30,
+                                      height: 30,
+                                      child: Image.asset(
+                                          'images/peach_story.png')),
+                                  Text('Princess Peach')
+                                ],
+                              ),
+                              Container(
+                                width: double.infinity,
+                                child: Image.asset('images/post_3.png'),
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Row(
+                                    children: <Widget>[
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child: Icon(
+                                            Icons.favorite_border_outlined),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child:
+                                            Icon(Icons.mode_comment_outlined),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                        child: Icon(Icons.near_me_outlined),
+                                      )
+                                    ],
+                                  ),
+                                  Icon(Icons.turned_in_not)
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                    child: Text(
+                                      'Princess Peach',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(top: 10),
+                                    child: Text('A kiss!'),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ))
